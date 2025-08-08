@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; /* Default thin weight */
+}
+
+@import "tailwindcss";
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-arrow {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-slide-arrow {
+  animation: slide-arrow 2s ease-out forwards;
+}
+@keyframes metallicFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-metallic-bg {
+  background: linear-gradient(
+    270deg,
+    #2d3748,
+    #4a5568,
+    #718096,
+    #a0aec0,
+    #cbd5e0
+  );
+  background-size: 400% 400%;
+  animation: metallicFlow 12s ease infinite;
+}
+@keyframes oceanWaves {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ocean-bg {
+  background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  animation: oceanWaves 10s ease infinite;
+}
+@keyframes neonPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.neon-bg {
+  background: radial-gradient(circle at top, #5f27cd, #341f97, #130f40);
+  animation: neonPulse 6s ease-in-out infinite;
+}
+@keyframes sunsetFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sunset-bg {
+  background: linear-gradient(270deg, #ff6e7f, #bfe9ff, #ffd3a5, #ff6e7f);
+  background-size: 400% 400%;
+  animation: sunsetFlow 15s ease-in-out infinite;
+}
+@keyframes cheerfulMetallicFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cheerful-metallic-text {
+  background: linear-gradient(
+    270deg,
+    #ffd700,
+    /* Gold */ #ff8c00,
+    /* Orange */ #ff1493,
+    /* Deep Pink */ #00ced1
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: cheerfulMetallicFlow 4s ease infinite;
+}
+/* Elegant subtle metallic text */
+/* Elegant metallic text with light & dark gray shades */
+/* Elegant gray metallic text with a soft shimmer pulse */
+.elegant-metallic-text {
+  background: linear-gradient(
+    90deg,
+    #f5f5f5,
+    #a3a3a3,
+    #4b4b4b,
+    #a3a3a3,
+    #f5f5f5
+  );
+  background-size: 300% 300%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: pulseGlow 10s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* app.css or index.css */
