@@ -69,7 +69,7 @@ export default function BlogDetail() {
     setLoading(true);
     try {
       const res = await axios.post(
-        "https://sysvonbackend-production.up.railway.app/api/v1/subscribe/create-subs",
+        "https://sysvonbackend-production.up.railway.app/api/v1/subscriber/create-subs",
         { email }
       );
 
