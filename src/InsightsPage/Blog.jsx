@@ -18,7 +18,7 @@ export default function BlogDetail() {
     const fetchBlog = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/v1/blog/detailed/${slug}`
+          `https://sysvonbackend-production.up.railway.app/api/v1/blog/detailed/${slug}`
         );
         setBlogData(res.data.data.blogDetail);
       } catch (err) {
@@ -69,7 +69,7 @@ export default function BlogDetail() {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/subscribe/create-subs",
+        "https://sysvonbackend-production.up.railway.app/api/v1/subscribe/create-subs",
         { email }
       );
 

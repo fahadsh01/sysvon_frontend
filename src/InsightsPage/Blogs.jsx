@@ -10,7 +10,7 @@ export default function Blogs() {
     const fetchblogs = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/blog/get-blogs",
+          "https://sysvonbackend-production.up.railway.app/api/v1/blog/get-blogs",
           {
             withCredentials: true,
           }

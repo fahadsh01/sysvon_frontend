@@ -25,7 +25,7 @@ export default function BlogSlider() {
     const fetchblogs = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/blog/get-blogs",
+          "https://sysvonbackend-production.up.railway.app/api/v1/blog/get-blogs",
           {
             withCredentials: true,
           }
